@@ -1,0 +1,74 @@
+* {
+box-sizing: border-box;
+}
+html, body{
+padding:0;
+margin:0;
+width: 100%;
+}
+/* --TOUTE LA PARTIE CSS-- */
+.wrapper {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+#video {
+display:block;
+width: 100%;
+}
+.img-wrapper {
+position:relative;
+}
+.text {
+color: white;
+text-shadow: black 0.1em 0.1em 0.2em;
+text-align:center;
+display: block;
+position:absolute;
+left: 5%;
+bottom: 72%;
+font-size: 225%;
+font-family: fantasy;
+letter-spacing: 5px;
+}
+
+.chaine-modal {
+color: white;
+text-shadow: black 0.1em 0.1em 0.2em;
+text-align: center;
+display: block;
+position:absolute;
+left: 43%;
+bottom: 80%;
+font-size: 500%;
+font-family: fantasy;
+letter-spacing: 5px;
+}
+.w3-modal {
+width: 100%;
+padding-top: 10%;
+
+}
+.w3 {
+display: block;
+}
+.video {
+width: 475.75px;
+cursor: zoom-in;
+height: 251px;
+}
+
+@media all and (max-width:1200px) {
+.wrapper {
+grid-template-columns: 1fr 1fr 1fr; 
+}
+}
+@media all and (max-width:800px) {
+.wrapper {          
+grid-template-columns: 1fr 1fr; 
+}
+}
+@media all and (max-width:400px) {
+.wrapper {
+grid-template-columns: 1fr; 
+}
+}
